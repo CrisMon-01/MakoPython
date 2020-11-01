@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Mako Dashboard</title>
+</head>
+<body>
+    <h1>Hi</h1>
+    <div>
+        POD INFO:
+        {% for pod in pods%}
+            <li>{{pod}}</li>
+        {%endfor%}
+    </div>
+    <div>
+        NODE INFO:
+        {% for node in nodes%}
+            <li>{{node}}</li>
+        {%endfor%}
+    </div>
+    <div>
+        LIMITS INFO:
+        {% for limit in limits%}
+            <li>{{limit}}</li>
+        {%endfor%}
+    </div>
+    <!-- {{pods}} -->
+</body>
+<footer>
+    <p>Author: CrisMon-01</p>
+    <p>Project Mako</p>
+  </footer>
+</html>
